@@ -4,5 +4,7 @@
     "arrterian.nix-env-selector",
     "tamasfe.even-better-toml",
     "jkillian.custom-local-formatters",
+    "ms-python.python",
+    "ms-python.vscode-pylance"
   ]
 }

@@ -8,7 +8,8 @@
         "jsonc",
         "md",
         "nix",
-        "toml"
+        "toml",
+        "python"
       ]
     }
   ],
@@ -27,4 +28,7 @@
   "[md]": {
     "editor.defaultFormatter": "jkillian.custom-local-formatters"
   },
+  "[python]": {
+    "editor.defaultFormatter": "jkillian.custom-local-formatters"
+  }
 }
