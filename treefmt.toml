@@ -10,4 +10,4 @@ includes = ["*.json", "*.toml", "*.md"]
 [formatter.black]
 command = "black"
 options = ["--fast"]
-includes = ["*.py"]
+includes = ["*.py", "*.pyi"]
