@@ -9,17 +9,22 @@
       flake = false;
     };
   };
-  outputs = { self, nixpkgs, flake-utils, devshell, ... } @ inputs:
-    flake-utils.lib.eachDefaultSystem (system:
-      let
+  outputs = {
+    self,
+    nixpkgs,
+    flake-utils,
+    devshell,
+    ...
+  } @ inputs:
+    flake-utils.lib.eachDefaultSystem (
+      system: let
         pkgs = import nixpkgs {
           inherit system;
           overlays = [
             devshell.overlay
           ];
         };
-      in
-      rec {
+      in rec {
         devShell = pkgs.devshell.mkShell {
           imports = [
             (pkgs.devshell.importTOML ./devshell.toml)
