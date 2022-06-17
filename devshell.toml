@@ -1,7 +1,9 @@
 [devshell]
 packages = [
-  "alejandra",
-  "dprint",
+  "alejandra", # Formatter for nix
+  "dprint", # Formatter for misc
+  "poetry", # Python package manager
+  "black", # Formatter for Python
 ]
 
 [[commands]]
